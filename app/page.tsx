@@ -143,7 +143,7 @@ export default function Home() {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">About Us</h3>
             <p className="text-purple-200">
-              We're a leading digital marketing agency helping businesses grow through innovative online strategies and proven results.
+              We&apos;re a leading digital marketing agency helping businesses grow through innovative online strategies and proven results.
             </p>
           </div>
           <div>
