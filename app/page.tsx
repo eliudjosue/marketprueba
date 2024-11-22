@@ -243,7 +243,7 @@ export default function Home() {
           </div>
           <div>
             <h2 className="text-4xl font-bold text-purple-900 mb-8">
-              Porque elegirnos?
+              Por qué elegirnos?
             </h2>
             <div className="space-y-6">
               {[
