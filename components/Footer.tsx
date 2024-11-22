@@ -52,7 +52,7 @@ export default function Footer() {
                   href="#choice"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Porque elegirnos?
+                  Por qué elegirnos?
                 </Link>
               </li>
             </ul>
