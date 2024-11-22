@@ -9,11 +9,11 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Resources", href: "#resources" },
+    { name: "Inicio", href: "/" },
+    { name: "Nosotros", href: "#about" },
+    { name: "Servicios", href: "#services" },
+    { name: "Como lo hacemos", href: "#howwedoit" },
+    { name: "Por que elegirnos", href: "#choice" },
   ];
 
   return (

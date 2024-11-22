@@ -27,23 +27,23 @@ const services = [
   }
 ];
 
-const pricingPlans = [
-  {
-    name: "Starter Plan",
-    price: "$500",
-    features: ["Basic SEO Optimization", "5 Blog Posts/Month", "Social Media Setup", "Monthly Report"]
-  },
-  {
-    name: "Business Plan",
-    price: "$1000",
-    features: ["Advanced SEO Strategy", "10 Blog Posts/Month", "Social Media Management", "Weekly Reports"]
-  },
-  {
-    name: "Premium Plan",
-    price: "$2000",
-    features: ["Enterprise SEO Suite", "20 Blog Posts/Month", "Full Social Management", "Daily Reports"]
-  }
-];
+// const pricingPlans = [
+//   {
+//     name: "Starter Plan",
+//     price: "$500",
+//     features: ["Basic SEO Optimization", "5 Blog Posts/Month", "Social Media Setup", "Monthly Report"]
+//   },
+//   {
+//     name: "Business Plan",
+//     price: "$1000",
+//     features: ["Advanced SEO Strategy", "10 Blog Posts/Month", "Social Media Management", "Weekly Reports"]
+//   },
+//   {
+//     name: "Premium Plan",
+//     price: "$2000",
+//     features: ["Enterprise SEO Suite", "20 Blog Posts/Month", "Full Social Management", "Daily Reports"]
+//   }
+// ];
 
 export default function Home() {
   return (
