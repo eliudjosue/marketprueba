@@ -130,7 +130,7 @@ export default function Footer() {
                 <textarea
                   id="message"
                   placeholder="Your Message"
-                  rows="3"
+                  // rows="3"
                   className="w-full px-4 py-2 bg-white text-sm border rounded-md focus:ring focus:ring-primary focus:outline-none"
                   required
                 ></textarea>
