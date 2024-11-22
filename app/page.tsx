@@ -105,7 +105,7 @@ export default function Home() {
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-400">{service.description}</p>
               </Card>
             ))}
           </div>
