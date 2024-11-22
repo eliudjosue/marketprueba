@@ -1,6 +1,11 @@
 "use client";
 
-import { RocketIcon, TrendingUpIcon, PenToolIcon, DollarSignIcon } from "lucide-react";
+import {
+  RocketIcon,
+  TrendingUpIcon,
+  PenToolIcon,
+  DollarSignIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -8,23 +13,27 @@ const services = [
   {
     icon: <RocketIcon className="h-8 w-8" />,
     title: "Publicidad en Google Ads",
-    description: "Campañas de búsqueda, display y remarketing para captar la atención en el momento justo."
+    description:
+      "Campañas de búsqueda, display y remarketing para captar la atención en el momento justo.",
   },
   {
     icon: <PenToolIcon className="h-8 w-8" />,
     title: "SaaS para PYMEs",
-    description: "Herramientas integradas para gestionar prospectos, analizar datos y automatizar procesos de marketing"
+    description:
+      "Herramientas integradas para gestionar prospectos, analizar datos y automatizar procesos de marketing",
   },
   {
     icon: <DollarSignIcon className="h-8 w-8" />,
     title: "Consultoría estratégica",
-    description: "Sesiones personalizadas para optimizar tus estrategias de marketing digital."
+    description:
+      "Sesiones personalizadas para optimizar tus estrategias de marketing digital.",
   },
   {
     icon: <TrendingUpIcon className="h-8 w-8" />,
     title: "Gestión de resultados",
-    description: "Informes claros y detallados para medir tu ROI y seguir mejorando."
-  }
+    description:
+      "Informes claros y detallados para medir tu ROI y seguir mejorando.",
+  },
 ];
 
 // const pricingPlans = [
@@ -49,36 +58,49 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-purple-900 via-purple-800 to-purple-900">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 px-4">
+      <section id="inicio" className="relative pt-20 pb-32 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-          Encuentra a tus clientes ideales
-          Tu negocio merece llegar a las personas adecuadas.
+            Encuentra a tus clientes ideales Tu negocio merece llegar a las
+            personas adecuadas.
           </h1>
           <p className="text-xl text-purple-100 mb-8">
-          Con nuestra tecnología avanzada y campañas personalizadas
+            Con nuestra tecnología avanzada y campañas personalizadas
           </p>
           <p className="text-xl text-purple-100 mb-8">
-          Ya no es cuestión de &quot;si te ven&quot;, sino de quién te ve y cómo reacciona.
+            Ya no es cuestión de &quot;si te ven&quot;, sino de quién te ve y
+            cómo reacciona.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" className="bg-purple-500 hover:bg-purple-600">
+            {/* <Button size="lg" className="bg-purple-500 hover:bg-purple-600">
               Get Started
-            </Button>
-            <Button size="lg" variant="outline" className="text-white">
-              Learn More
+            </Button> */}
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-white relative overflow-hidden group"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
+              <span className="relative z-10 group-hover:scale-105 transition-transform">
+                Contáctanos
+              </span>
             </Button>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-purple-50">
+      <section id="services" className="py-20 px-4 bg-purple-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Services</h2>
+          <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
+            Servicios
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="p-6 text-center hover:shadow-lg transition-shadow"
+              >
                 <div className="flex justify-center mb-4 text-purple-600">
                   {service.icon}
                 </div>
@@ -91,17 +113,19 @@ export default function Home() {
       </section>
 
       {/* How we do it */}
-      <section className="py-20 px-4 bg-purple-50">
+      <section id="howwedoit" className="py-20 px-4 bg-purple-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-purple-900 mb-8">How we do it?</h2>
+            <h2 className="text-4xl font-bold text-purple-900 mb-8">
+              Como lo hacemos?
+            </h2>
             <div className="space-y-6">
               {[
                 "Análisis profundo de tu negocio: Identificamos tus metas y desafíos específicos.",
                 "Estrategias personalizadas: Diseñamos planes a medida basados en tus objetivos.",
                 "Campañas inteligentes: Optimizamos tus anuncios en Google y Meta Ads para maximizar resultados con la menor inversión.",
                 "Tecnología SaaS intuitiva: Te damos herramientas para monitorear resultados en tiempo real, simplificando tus decisiones.",
-                "Optimización constante: Analizamos métricas y ajustamos en cada etapa para garantizar un crecimiento sostenido."
+                "Optimización constante: Analizamos métricas y ajustamos en cada etapa para garantizar un crecimiento sostenido.",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="bg-purple-600 p-2 rounded-full text-white">
@@ -113,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           <div className="aspect-video rounded-lg overflow-hidden">
-            <img 
+            <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2R-KEM4SqIz31n8AcNjTbNypCvYX9AG5Y7Q&s"
               alt="Team working"
               className="w-full h-full object-cover"
@@ -144,85 +168,90 @@ export default function Home() {
       </section> */}
 
       {/* Quienes somos*/}
-      <section className="bg-purple-900 text-white py-12 px-4">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
-    <div className="text-center">
-      <h3 className="text-3xl font-bold mb-6">Quiénes Somos</h3>
-      <p className="text-purple-200 max-w-2xl mx-auto">
-        Somos un equipo apasionado conformado por un desarrollador de software y dos community managers, emprendedores
-        dedicados a transformar ideas en realidades digitales. Nuestro objetivo es crear, conectar e inspirar.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-      {/* Primer miembro */}
-      <div className="text-center">
-        <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
-          <img
-            src="ruta-a-la-foto-del-desarrollador.jpg"
-            alt="Desarrollador de software"
-            className="w-full h-full object-cover"
-          />
+      <section id="about" className="bg-purple-900 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
+          <div className="text-center">
+            <h3 className="text-3xl font-bold mb-6">Quiénes Somos</h3>
+            <p className="text-purple-200 max-w-2xl mx-auto">
+              Somos un equipo apasionado conformado por un desarrollador de
+              software y dos community managers, emprendedores dedicados a
+              transformar ideas en realidades digitales. Nuestro objetivo es
+              crear, conectar e inspirar.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {/* Primer miembro */}
+            <div className="text-center">
+              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
+                <img
+                  src="ruta-a-la-foto-del-desarrollador.jpg"
+                  alt="Desarrollador de software"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-bold mt-4">Eliud Campos</h4>
+              <p className="text-purple-200 text-sm mt-2">
+                Desarrollador de software con experiencia en tecnologías
+                modernas. Crea soluciones innovadoras que transforman ideas en
+                código.
+              </p>
+            </div>
+            {/* Segundo miembro */}
+            <div className="text-center">
+              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
+                <img
+                  src="ruta-a-la-foto-del-primer-community-manager.jpg"
+                  alt="Community Manager 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-bold mt-4">Maru Salazar</h4>
+              <p className="text-purple-200 text-sm mt-2">
+                Especialista Digital en estrategias de marketing que impulsa
+                marcas a través de marketing innovador y campañas efectivas.
+              </p>
+            </div>
+            {/* Tercer miembro */}
+            <div className="text-center">
+              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
+                <img
+                  src="ruta-a-la-foto-del-segundo-community-manager.jpg"
+                  alt="Community Manager 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-bold mt-4">Gaby García</h4>
+              <p className="text-purple-200 text-sm mt-2">
+                Especialista Digital y Paid media Manager que optimiza campañas
+                digitales para maximizar el alcance y los resultados de las
+                marcas
+              </p>
+            </div>
+          </div>
         </div>
-        <h4 className="text-xl font-bold mt-4">Eliud Campos</h4>
-        <p className="text-purple-200 text-sm mt-2">
-          Desarrollador de software con experiencia en tecnologías modernas. Crea soluciones innovadoras que transforman
-          ideas en código.
-        </p>
-      </div>
-      {/* Segundo miembro */}
-      <div className="text-center">
-        <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
-          <img
-            src="ruta-a-la-foto-del-primer-community-manager.jpg"
-            alt="Community Manager 1"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <h4 className="text-xl font-bold mt-4">Maru Salazar</h4>
-        <p className="text-purple-200 text-sm mt-2">
-          Especialista Digital en estrategias de marketing que impulsa marcas a través de marketing innovador y campañas efectivas.
-        </p>
-      </div>
-      {/* Tercer miembro */}
-      <div className="text-center">
-        <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
-          <img
-            src="ruta-a-la-foto-del-segundo-community-manager.jpg"
-            alt="Community Manager 2"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <h4 className="text-xl font-bold mt-4">Gaby García</h4>
-        <p className="text-purple-200 text-sm mt-2">
-          Especialista Digital y Paid media Manager que optimiza campañas digitales para maximizar el alcance y los resultados de las marcas
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 px-4 bg-purple-50">
+      <section id="choice" className="py-20 px-4 bg-purple-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="aspect-video rounded-lg overflow-hidden">
-            <img 
+            <img
               src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80"
               alt="Team working"
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h2 className="text-4xl font-bold text-purple-900 mb-8">Why Choose Us?</h2>
+            <h2 className="text-4xl font-bold text-purple-900 mb-8">
+              Porque elegirnos?
+            </h2>
             <div className="space-y-6">
               {[
-                "Resultados medibles desde el día 1 Confiamos en la calidad de nuestro trabajo, y por eso te mostramos los resultados de manera transparente desde el primer momento."
-,
-                "Soluciones diseñadas para PYMEs Entendemos tus desafíos como emprendedor. Diseñamos servicios y herramientas accesibles y eficaces para maximizar tu presupuesto."
-,
+                "Resultados medibles desde el día 1 Confiamos en la calidad de nuestro trabajo, y por eso te mostramos los resultados de manera transparente desde el primer momento.",
+                "Soluciones diseñadas para PYMEs Entendemos tus desafíos como emprendedor. Diseñamos servicios y herramientas accesibles y eficaces para maximizar tu presupuesto.",
                 "Expertos certificados Nuestro equipo cuenta con certificaciones oficiales en Google Ads, Meta Ads y desarrollo SaaS, garantizando experiencia y profesionalismo.",
                 "Atención personalizada No eres solo un cliente. Nos convertimos en un aliado estratégico, disponible para atender tus necesidades y ajustar estrategias a medida que tu negocio crece.",
-                "Tecnología avanzada Nuestro SaaS es intuitivo, potente y diseñado para facilitar tu trabajo, permitiéndote enfocarte en lo que mejor haces: tu negocio."
-
+                "Tecnología avanzada Nuestro SaaS es intuitivo, potente y diseñado para facilitar tu trabajo, permitiéndote enfocarte en lo que mejor haces: tu negocio.",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="bg-purple-600 p-2 rounded-full text-white">
@@ -235,9 +264,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      
-
     </main>
   );
 }

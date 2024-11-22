@@ -9,12 +9,20 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Inicio", href: "/" },
-    { name: "Nosotros", href: "#about" },
-    { name: "Servicios", href: "#services" },
-    { name: "Como lo hacemos", href: "#howwedoit" },
-    { name: "Por que elegirnos", href: "#choice" },
+    { name: "Inicio", href: "inicio" },
+    { name: "Nosotros", href: "about" },
+    { name: "Servicios", href: "services" },
+    { name: "Como lo hacemos", href: "howwedoit" },
+    { name: "Por qué elegirnos", href: "choice" },
   ];
+
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // Cerrar el menú en móvil
+    }
+  };
 
   return (
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
@@ -29,16 +37,16 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex space-x-6">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  href={item.href}
+                  onClick={() => handleScroll(item.href)}
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
             </div>
-            <Button>Login</Button>
+            {/* <Button>Login</Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,16 +78,15 @@ export default function Header() {
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  href={item.href}
+                  onClick={() => handleScroll(item.href)}
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
-              <Button className="w-full">Login</Button>
+              {/* <Button className="w-full">Login</Button> */}
             </div>
           </div>
         )}
