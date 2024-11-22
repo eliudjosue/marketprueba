@@ -59,7 +59,7 @@ export default function Home() {
           Con nuestra tecnología avanzada y campañas personalizadas
           </p>
           <p className="text-xl text-purple-100 mb-8">
-          Ya no es cuestión de "si te ven", sino de quién te ve y cómo reacciona.
+          Ya no es cuestión de &quot;si te ven&quot;, sino de quién te ve y cómo reacciona.
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" className="bg-purple-500 hover:bg-purple-600">
