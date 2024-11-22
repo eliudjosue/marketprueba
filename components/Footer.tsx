@@ -72,6 +72,26 @@ export default function Footer() {
                 <Phone className="h-4 w-4" />
                 <span className="text-muted-foreground">+1 (555) 123-4567</span>
               </li>
+              <div className="flex space-x-4">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Twitter className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </Link>
+            </div>
             </ul>
           </div>
 
