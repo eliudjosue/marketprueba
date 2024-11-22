@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import {
@@ -79,6 +80,9 @@ export default function Home() {
               size="lg"
               variant="outline"
               className="text-white relative overflow-hidden group"
+              onClick={() =>
+                window.open("https://wa.me/541122522838", "_blank")
+              }
             >
               <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
               <span className="relative z-10 group-hover:scale-105 transition-transform">

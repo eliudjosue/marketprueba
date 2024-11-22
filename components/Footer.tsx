@@ -1,16 +1,53 @@
-import Link from "next/link";
+"use client"
 import {
-  Rocket,
   Facebook,
-  Twitter,
   Instagram,
   Mail,
   Phone,
+  Rocket,
+  Twitter,
 } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 import { Button } from "./ui/button";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+
+    // Envía los datos a Formspree
+    const response = await fetch("https://formspree.io/f/mzzbvqyd", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("Formulario enviado con éxito!");
+      setFormData({ name: "", email: "", message: "" }); // Limpia el formulario
+      form.reset(); // Restablece el formulario visualmente
+    } else {
+      alert("Ocurrió un error al enviar el formulario.");
+    }
+  };
 
   return (
     <footer className="bg-muted/30 border-t">
@@ -23,7 +60,7 @@ export default function Footer() {
               <span className="font-bold text-xl">DigiMarkPro</span>
             </Link>
             <p className="text-muted-foreground">
-            Agencia de marketing digital líder que ayuda a las empresas a crecer a través de estrategias innovadoras y resultados comprobados.
+              Agencia de marketing digital líder que ayuda a las empresas a crecer a través de estrategias innovadoras y resultados comprobados.
             </p>
           </div>
 
@@ -73,41 +110,43 @@ export default function Footer() {
                 <span className="text-muted-foreground">+1 (555) 123-4567</span>
               </li>
               <div className="flex space-x-4">
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
-              </Link>
-            </div>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Facebook className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Twitter className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Instagram className="h-5 w-5" />
+                </Link>
+              </div>
             </ul>
           </div>
 
           {/* Contact Form */}
           <div className="md:col-span-2 lg:col-span-1">
             <h3 className="font-semibold mb-4">Escribenos</h3>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="sr-only">
                   Name
                 </label>
                 <input
                   type="text"
-                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Your Name"
-                  className="w-full px-4 py-2 bg-white text-sm border rounded-md focus:ring focus:ring-primary focus:outline-none"
+                  className="w-full px-4 py-2 bg-white text-black text-sm border rounded-md focus:ring focus:ring-primary focus:outline-none"
                   required
                 />
               </div>
@@ -117,9 +156,11 @@ export default function Footer() {
                 </label>
                 <input
                   type="email"
-                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Your Email"
-                  className="w-full px-4 py-2 bg-white text-sm border rounded-md focus:ring focus:ring-primary focus:outline-none"
+                  className="w-full px-4 py-2 bg-white text-sm text-black border rounded-md focus:ring focus:ring-primary focus:outline-none"
                   required
                 />
               </div>
@@ -128,16 +169,19 @@ export default function Footer() {
                   Message
                 </label>
                 <textarea
-                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Your Message"
-                  // rows="3"
-                  className="w-full px-4 py-2 bg-white text-sm border rounded-md focus:ring focus:ring-primary focus:outline-none"
+                  rows={3}
+                  className="w-full px-4 py-2 bg-white text-black text-sm border rounded-md focus:ring focus:ring-primary focus:outline-none"
                   required
                 ></textarea>
               </div>
               <Button
                 size="lg"
                 variant="outline"
+                type="submit"
                 className="text-white relative overflow-hidden group"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
