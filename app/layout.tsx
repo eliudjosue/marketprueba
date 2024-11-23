@@ -5,13 +5,17 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BotLayout from '@/components/BotLayout';
-import Head from 'next/head'; // Importa el componente Head
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Digital Marketing Excellence',
   description: 'Boost your business with our digital marketing solutions',
+  // Agrega la metaetiqueta aquí
+  metadataBase: new URL('https://marketprueba.vercel.app/'), // Cambia a tu dominio
+  verification: {
+    google: 'mnBnVwKrQC3mrzjcjJedAI_jDMFizprlcSKQGmwxptE', // Clave de verificación
+  },
 };
 
 export default function RootLayout({
@@ -21,14 +25,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        {/* Enlace al favicon */}
-        <meta name="google-site-verification" content="mnBnVwKrQC3mrzjcjJedAI_jDMFizprlcSKQGmwxptE" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
       <body className={inter.className}>
         <BotLayout>
           <ThemeProvider
