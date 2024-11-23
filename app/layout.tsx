@@ -22,10 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        {/* Meta de verificación de Google */}
-        <meta name="google-site-verification" content="mnBnVwKrQC3mrzjcjJedAI_jDMFizprlcSKQGmwxptE" />
-        
         {/* Enlace al favicon */}
+        <meta name="google-site-verification" content="mnBnVwKrQC3mrzjcjJedAI_jDMFizprlcSKQGmwxptE" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
