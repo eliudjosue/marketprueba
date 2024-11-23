@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BotLayout from '@/components/BotLayout';
+import Head from 'next/head'; // Importa el componente Head
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,20 +21,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        {/* Meta de verificación de Google */}
+        <meta name="google-site-verification" content="mnBnVwKrQC3mrzjcjJedAI_jDMFizprlcSKQGmwxptE" />
+        
+        {/* Enlace al favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#ffffff" />
+      </Head>
       <body className={inter.className}>
         <BotLayout>
           <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem={false}
+            disableTransitionOnChange
+          >
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ThemeProvider>
         </BotLayout>
-        
       </body>
     </html>
   );
