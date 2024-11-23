@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {/* <BotLayout> */}
+        <BotLayout>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -37,7 +37,7 @@ export default function RootLayout({
             <main>{children}</main>
             <Footer />
           </ThemeProvider>
-        {/* </BotLayout> */}
+        </BotLayout>
       </body>
     </html>
   );
