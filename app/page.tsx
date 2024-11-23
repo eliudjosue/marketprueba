@@ -142,7 +142,7 @@ export default function Home() {
           </div>
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2R-KEM4SqIz31n8AcNjTbNypCvYX9AG5Y7Q&s"
+              src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80"
               alt="Team working"
               className="w-full h-full object-cover"
             />
