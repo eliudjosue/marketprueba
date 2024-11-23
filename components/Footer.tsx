@@ -32,7 +32,8 @@ export default function Footer() {
     const form = e.target as HTMLFormElement;
 
     // Envía los datos a Formspree
-    const response = await fetch("https://formspree.io/f/mzzbvqyd", {
+    // const response = await fetch("https://formspree.io/f/mzzbvqyd", {
+    const response = await fetch("", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
