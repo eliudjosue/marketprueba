@@ -8,7 +8,6 @@ import BotLayout from '@/components/BotLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
-<meta name="google-site-verification" content="hCY3mnZu6kZvpEFL56eKbraMYhjlJlv3H0SHkecgKoU" />
 
 export const metadata: Metadata = {
   title: 'Digital Marketing Excellence',
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   // Agrega la metaetiqueta aquí
   metadataBase: new URL('https://www.macawminds.com.ar/'), // Cambia a tu dominio
   verification: {
-    google: 'hCY3mnZu6kZvpEFL56eKbraMYhjlJlv3H0SHkecgKoU', // Clave de verificación
+    google: 'tj8qy9wsSoAWTcHjvNqkZ-3vT4FT2JBrW3eRixpDlSQ', // Clave de verificación
   },
 };
 
