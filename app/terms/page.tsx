@@ -5,7 +5,7 @@ const TermsPage: React.FC = () => {
     <div className="container mx-auto px-4 py-14">
       <h1 className="text-3xl font-bold mb-6">Términos y Condiciones de Uso</h1>
       <p className="text-gray-200 mb-4">
-        Fecha de entrada en vigor: <strong>[fecha]</strong>
+        Fecha de entrada en vigor: <strong>[2024-11-25]</strong>
       </p>
 
       <section className="mb-8">
