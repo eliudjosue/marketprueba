@@ -6,31 +6,33 @@ import {
   TrendingUpIcon,
   PenToolIcon,
   DollarSignIcon,
+  Code,
+  Monitor,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const services = [
   {
-    icon: <RocketIcon className="h-8 w-8" />,
+    icon: <RocketIcon className="h-14 w-14" />,
     title: "Publicidad en Google Ads",
     description:
       "Campañas de búsqueda, display y remarketing para captar la atención en el momento justo.",
   },
   {
-    icon: <PenToolIcon className="h-8 w-8" />,
+    icon: <Code className="h-14 w-14" />,
     title: "SaaS para PYMEs",
     description:
       "Herramientas integradas para gestionar prospectos, analizar datos y automatizar procesos de marketing",
   },
   {
-    icon: <DollarSignIcon className="h-8 w-8" />,
+    icon: <Monitor className="h-14 w-14" />,
     title: "Consultoría estratégica",
     description:
       "Sesiones personalizadas para optimizar tus estrategias de marketing digital.",
   },
   {
-    icon: <TrendingUpIcon className="h-8 w-8" />,
+    icon: <TrendingUpIcon className="h-14 w-14" />,
     title: "Gestión de resultados",
     description:
       "Informes claros y detallados para medir tu ROI y seguir mejorando.",

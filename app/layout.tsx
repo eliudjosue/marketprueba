@@ -8,13 +8,15 @@ import BotLayout from '@/components/BotLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
+<meta name="google-site-verification" content="hCY3mnZu6kZvpEFL56eKbraMYhjlJlv3H0SHkecgKoU" />
+
 export const metadata: Metadata = {
   title: 'Digital Marketing Excellence',
   description: 'Boost your business with our digital marketing solutions',
   // Agrega la metaetiqueta aquí
-  metadataBase: new URL('https://marketprueba.vercel.app/'), // Cambia a tu dominio
+  metadataBase: new URL('https://www.macawminds.com.ar/'), // Cambia a tu dominio
   verification: {
-    google: 'mnBnVwKrQC3mrzjcjJedAI_jDMFizprlcSKQGmwxptE', // Clave de verificación
+    google: 'hCY3mnZu6kZvpEFL56eKbraMYhjlJlv3H0SHkecgKoU', // Clave de verificación
   },
 };
 
@@ -25,6 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+         <head>
+        {/* Agrega la referencia al favicon */}
+        <link rel="icon" type="image/png" href="/favicon.svg" />
+      </head>
       <body className={inter.className}>
         <BotLayout>
           <ThemeProvider
