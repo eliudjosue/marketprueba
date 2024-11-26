@@ -1,4 +1,8 @@
 User-agent: *
-Disallow:
+Allow: /
 
+# Host
+Host:https://www.macawminds.com.ar
+
+# Sitemaps
 Sitemap: https://www.macawminds.com.ar/sitemap.xml
