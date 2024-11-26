@@ -11,7 +11,7 @@ const TermsPage: React.FC = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">1. Introducción</h2>
         <p className="text-gray-200 mb-4">
-          Bienvenido a DigiMarkPro, un sitio web que ofrece servicios de marketing digital y software como servicio
+          Bienvenido a MacawMinds, un sitio web que ofrece servicios de marketing digital y software como servicio
           (SaaS) especializado en soluciones para PYMEs. Estos términos y condiciones (&quot;Términos&quot;) rigen el uso de
           nuestro sitio web y los servicios ofrecidos. Al acceder o utilizar nuestro sitio, aceptas estar sujeto a estos
           Términos.
@@ -20,7 +20,7 @@ const TermsPage: React.FC = () => {
           Si tienes alguna consulta, puedes contactarnos en:
         </p>
         <ul className="list-disc list-inside text-gray-200 mb-4">
-          <li>Correo: contact@digimarkpro.com</li>
+          <li>Correo: contact@MacawMinds.com</li>
           <li>Teléfono: +1 (555) 123-4567</li>
         </ul>
       </section>
@@ -74,7 +74,7 @@ const TermsPage: React.FC = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">6. Propiedad Intelectual</h2>
         <p className="text-gray-200 mb-4">
-          Todo el contenido de DigiMarkPro, incluyendo texto, gráficos, logos y software, es propiedad de DigiMarkPro o
+          Todo el contenido de MacawMinds, incluyendo texto, gráficos, logos y software, es propiedad de MacawMinds o
           de sus licenciantes. No se permite su reproducción, distribución o uso sin autorización previa.
         </p>
       </section>
@@ -95,7 +95,7 @@ const TermsPage: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-4">8. Limitación de Responsabilidad</h2>
         <ul className="list-disc list-inside text-gray-200 mb-4">
           <li>
-            DigiMarkPro no se responsabiliza por resultados obtenidos a través de nuestras campañas publicitarias, que
+            MacawMinds no se responsabiliza por resultados obtenidos a través de nuestras campañas publicitarias, que
             dependen de múltiples factores externos.
           </li>
           <li>Interrupciones temporales del servicio SaaS debido a mantenimiento o problemas técnicos.</li>
@@ -120,8 +120,8 @@ const TermsPage: React.FC = () => {
 
       <p className="text-gray-200 mt-8">
         Si tienes preguntas sobre estos Términos, contáctanos en:{" "}
-        <a href="mailto:contact@digimarkpro.com" className="text-primary hover:underline">
-          contact@digimarkpro.com
+        <a href="mailto:contact@MacawMinds.com" className="text-primary hover:underline">
+          contact@MacawMinds.com
         </a>
         .
       </p>

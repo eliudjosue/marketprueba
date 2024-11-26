@@ -9,8 +9,8 @@ import BotLayout from "@/components/BotLayout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Excellence",
-  description: "Boost your business with our digital marketing solutions",
+  title: "MacawMinds",
+  description: "",
   metadataBase: new URL("https://www.macawminds.com.ar/"), 
   verification: {
     google: "tj8qy9wsSoAWTcHjvNqkZ-3vT4FT2JBrW3eRixpDlSQ", 

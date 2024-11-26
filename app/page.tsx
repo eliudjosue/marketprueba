@@ -15,21 +15,21 @@ import { Card } from "@/components/ui/card";
 const services = [
   {
     icon: <RocketIcon className="h-14 w-14" />,
-    title: "Publicidad en Google Ads",
+    title: "Asesoría de Marketing",
     description:
-      "Campañas de búsqueda, display y remarketing para captar la atención en el momento justo.",
+      "Te brindamos asesoramiento personalizado para una estrategia de marketing eficiente que te permita mostrar el valor de tu servicio.",
   },
   {
     icon: <Code className="h-14 w-14" />,
-    title: "SaaS para PYMEs",
+    title: "Creación de Sitios Web",
     description:
-      "Herramientas integradas para gestionar prospectos, analizar datos y automatizar procesos de marketing",
+      "Creamos Landing Pages y Sitios web únicos, orientados a la generación de leads para que tus clientes potenciales te conozcan.",
   },
   {
     icon: <Monitor className="h-14 w-14" />,
-    title: "Consultoría estratégica",
+    title: "Publicidad en Google Ads",
     description:
-      "Sesiones personalizadas para optimizar tus estrategias de marketing digital.",
+      "Creación y seguimiento de campañas de búsqueda, display y máximo rendimiento para captar la atención en el momento justo y al público adecuado.",
   },
   {
     icon: <TrendingUpIcon className="h-14 w-14" />,
@@ -64,16 +64,14 @@ export default function Home() {
       <section id="inicio" className="relative pt-20 pb-32 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Encuentra a tus clientes ideales Tu negocio merece llegar a las
-            personas adecuadas.
+            Impulsa tu negocio al siguiente nivel
           </h1>
           <p className="text-xl text-purple-100 mb-8">
-            Con nuestra tecnología avanzada y campañas personalizadas
+            Creamos sitios web diseñados para captar leads, optimizamos tu
+            presencia en Google y ejecutamos campañas de Google Ads efectivas
+            para generar más oportunidades de negocio.
           </p>
-          <p className="text-xl text-purple-100 mb-8">
-            Ya no es cuestión de &quot;si te ven&quot;, sino de quién te ve y
-            cómo reacciona.
-          </p>
+
           <div className="flex gap-4 justify-center">
             {/* <Button size="lg" className="bg-purple-500 hover:bg-purple-600">
               Get Started
@@ -99,7 +97,7 @@ export default function Home() {
       <section id="services" className="py-20 px-4 bg-purple-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
-            Servicios
+            Nuestros servicios
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
@@ -123,15 +121,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl font-bold text-purple-900 mb-8">
-              Como lo hacemos?
+              Nuestro proceso es claro y transparente
             </h2>
             <div className="space-y-6">
               {[
-                "Análisis profundo de tu negocio: Identificamos tus metas y desafíos específicos.",
-                "Estrategias personalizadas: Diseñamos planes a medida basados en tus objetivos.",
-                "Campañas inteligentes: Optimizamos tus anuncios en Google y Meta Ads para maximizar resultados con la menor inversión.",
-                "Tecnología SaaS intuitiva: Te damos herramientas para monitorear resultados en tiempo real, simplificando tus decisiones.",
-                "Optimización constante: Analizamos métricas y ajustamos en cada etapa para garantizar un crecimiento sostenido.",
+                "Consulta inicial: Conversamos sobre tus objetivos y te explicamos cómo podemos ayudarte.",
+                "Propuesta personalizada: Te presentamos un plan detallado con todos los servicios incluidos.",
+                "Ejecución y seguimiento: Ponemos en marcha tu proyecto y te mantenemos informado en todo momento.",
+                "Transferencia de conocimientos: Te enseñamos a gestionar tus herramientas digitales para que tengas el control total.",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="bg-purple-600 p-2 rounded-full text-white">
@@ -180,9 +177,10 @@ export default function Home() {
             <h3 className="text-3xl font-bold mb-6">Quiénes Somos</h3>
             <p className="text-purple-200 max-w-2xl mx-auto">
               Somos un equipo apasionado conformado por un desarrollador de
-              software y dos community managers, emprendedores dedicados a
-              transformar ideas en realidades digitales. Nuestro objetivo es
-              crear, conectar e inspirar.
+              software y dos especialistas en digitales orientadas a la creación
+              de estrategias de marketing innovadoras, eficientes y
+              especializadas en poner tu negocio frente a los ojos correctos.
+              Nuestro objetivo es crear, conectar e inspirar.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -213,8 +211,9 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold mt-4">Maru Salazar</h4>
               <p className="text-purple-200 text-sm mt-2">
-                Especialista Digital en estrategias de marketing que impulsa
-                marcas a través de marketing innovador y campañas efectivas.
+                Especialista Digital orientada a la creación de estrategias de
+                marketing personalizadas orientadas a potenciar marcas y atraer
+                clientes potenciales.
               </p>
             </div>
             {/* Tercer miembro */}
@@ -228,9 +227,9 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold mt-4">Gaby García</h4>
               <p className="text-purple-200 text-sm mt-2">
-                Especialista Digital y Paid media Manager que optimiza campañas
-                digitales para maximizar el alcance y los resultados de las
-                marcas
+                Especialista digital orientada a Paid media, especialista en
+                Google Ads. Orientada a la creación de campañas creativas y
+                eficientes.
               </p>
             </div>
           </div>
@@ -253,11 +252,9 @@ export default function Home() {
             </h2>
             <div className="space-y-6">
               {[
-                "Resultados medibles desde el día 1 Confiamos en la calidad de nuestro trabajo, y por eso te mostramos los resultados de manera transparente desde el primer momento.",
-                "Soluciones diseñadas para PYMEs Entendemos tus desafíos como emprendedor. Diseñamos servicios y herramientas accesibles y eficaces para maximizar tu presupuesto.",
-                "Expertos certificados Nuestro equipo cuenta con certificaciones oficiales en Google Ads, Meta Ads y desarrollo SaaS, garantizando experiencia y profesionalismo.",
-                "Atención personalizada No eres solo un cliente. Nos convertimos en un aliado estratégico, disponible para atender tus necesidades y ajustar estrategias a medida que tu negocio crece.",
-                "Tecnología avanzada Nuestro SaaS es intuitivo, potente y diseñado para facilitar tu trabajo, permitiéndote enfocarte en lo que mejor haces: tu negocio.",
+                "Soluciones a medida: Diseñamos estrategias de marketing digital que se adaptan a las necesidades únicas de tu negocio.",
+                "Tú tienes el control: Te proporcionamos las herramientas y los conocimientos necesarios para que puedas gestionar tus campañas y tomar decisiones informadas.",
+                "Adaptabilidad a cualquier presupuesto: Ofrecemos una variedad de paquetes y servicios para que puedas elegir la opción que mejor se ajuste a tus necesidades y presupuesto.",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4">
                   <div className="bg-purple-600 p-2 rounded-full text-white">

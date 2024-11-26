@@ -57,10 +57,10 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <Rocket className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl">DigiMarkPro</span>
+              <span className="font-bold text-xl">MacawMinds</span>
             </Link>
             <p className="text-muted-foreground">
-              Agencia de marketing digital líder que ayuda a las empresas a crecer a través de estrategias innovadoras y resultados comprobados.
+            Tu solución completa de marketing digital. Desde el análisis de tu negocio hasta la gestión de tus campañas publicitarias, te ofrecemos un servicio integral para optimizar tu presencia en línea y generar más leads.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export default function Footer() {
                   href="#choice"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Por qué elegirnos?
+                  Por qué elegirnos
                 </Link>
               </li>
             </ul>
@@ -195,7 +195,7 @@ export default function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
           <p>
-            © {currentYear} DigiMarkPro. All rights reserved.{" "}
+            © {currentYear} MacawMinds. All rights reserved.{" "}
             <Link href="/terms" className="hover:text-primary">
               Terms & Conditions
             </Link>

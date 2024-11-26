@@ -10,9 +10,9 @@ export default function Header() {
 
   const navItems = [
     { name: "Inicio", href: "inicio" },
-    { name: "Nosotros", href: "about" },
     { name: "Servicios", href: "services" },
     { name: "Como lo hacemos", href: "howwedoit" },
+    { name: "Nosotros", href: "about" },
     { name: "Por qué elegirnos", href: "choice" },
   ];
 
@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Rocket className="h-6 w-6 text-primary" />
-            <span className="font-bold text-xl">DigiMarkPro</span>
+            <span className="font-bold text-xl">MacawMinds</span>
           </Link>
 
           {/* Desktop Navigation */}
