@@ -61,21 +61,19 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-cyan-900 via-cyan-800 to-cyan-900">
       {/* Hero Section */}
-      <section id="inicio" className="relative pt-20 pb-32 px-4">
+      <section id="inicio" className="relative pt-28 pb-32 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Impulsa tu negocio al siguiente nivel
-          </h1>
-          <p className="text-xl text-cyan-100 mb-8">
-            Creamos sitios web diseñados para captar leads, optimizamos tu
-            presencia en Google y ejecutamos campañas de Google Ads efectivas
-            para generar más oportunidades de negocio.
-          </p>
-
+          <header>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Diseño web profesional para captar más clientes
+            </h1>
+            <p className="text-xl text-cyan-100 mb-8">
+              Desarrollamos sitios web optimizados para posicionarte en Google,
+              captar clientes potenciales y ejecutar campañas efectivas de
+              Google Ads
+            </p>
+          </header>
           <div className="flex gap-4 justify-center">
-            {/* <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600">
-              Get Started
-            </Button> */}
             <Button
               size="lg"
               variant="outline"
@@ -149,28 +147,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      {/* <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-cyan-900 mb-12">Pricing Plans</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pricingPlans.map((plan, index) => (
-              <Card key={index} className="p-8 text-center hover:shadow-xl transition-shadow">
-                <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
-                <p className="text-4xl font-bold text-cyan-600 mb-6">{plan.price}<span className="text-base font-normal text-gray-600">/month</span></p>
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="text-gray-600">{feature}</li>
-                  ))}
-                </ul>
-                <Button className="w-full bg-cyan-600 hover:bg-cyan-700">Select Plan</Button>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Quienes somos*/}
+
       <section id="about" className="bg-cyan-900 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
           <div className="text-center">
@@ -185,53 +163,61 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {/* Primer miembro */}
-            <div className="text-center">
+            <figure className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
                   src="eli.webp"
-                  alt="Desarrollador de software"
+                  alt="Retrato de Eliud Campos, desarrollador de software especializado en tecnologías modernas."
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
-              <h4 className="text-xl font-bold mt-4">Eliud Campos</h4>
-              <p className="text-cyan-200 text-sm mt-2">
-                Desarrollador de software con experiencia en tecnologías
-                modernas. Crea soluciones innovadoras que transforman ideas en
-                código.
-              </p>
-            </div>
+              <figcaption>
+                <h4 className="text-xl font-bold mt-4">Eliud Campos</h4>
+                <p className="text-cyan-200 text-sm mt-2">
+                  Desarrollador de software con experiencia en tecnologías
+                  modernas. Crea soluciones innovadoras que transforman ideas en
+                  código.
+                </p>
+              </figcaption>
+            </figure>
             {/* Segundo miembro */}
-            <div className="text-center">
+            <figure className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
                   src="/maru.webp"
-                  alt="Community Manager 1"
+                  alt="Retrato de Maru Salazar, especialista en estrategias de marketing digital."
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
-              <h4 className="text-xl font-bold mt-4">Maru Salazar</h4>
-              <p className="text-cyan-200 text-sm mt-2">
-                Especialista Digital orientada a la creación de estrategias de
-                marketing personalizadas, potenciar marcas y atraer
-                potenciales clientes.
-              </p>
-            </div>
+              <figcaption>
+                <h4 className="text-xl font-bold mt-4">Maru Salazar</h4>
+                <p className="text-cyan-200 text-sm mt-2">
+                  Especialista Digital orientada a la creación de estrategias de
+                  marketing personalizadas, potenciar marcas y atraer
+                  potenciales clientes.
+                </p>
+              </figcaption>
+            </figure>
             {/* Tercer miembro */}
-            <div className="text-center">
+            <figure className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
                   src="gaby.webp"
-                  alt="Community Manager 2"
+                  alt="Retrato de Gaby García, especialista en campañas creativas de Google Ads y Paid Media."
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
-              <h4 className="text-xl font-bold mt-4">Gaby García</h4>
-              <p className="text-cyan-200 text-sm mt-2">
-                Especialista digital orientada a Paid media y
-                Google Ads. Dedicada a la creación de campañas creativas y
-                eficientes.
-              </p>
-            </div>
+              <figcaption>
+                <h4 className="text-xl font-bold mt-4">Gaby García</h4>
+                <p className="text-cyan-200 text-sm mt-2">
+                  Especialista digital orientada a Paid media y Google Ads.
+                  Dedicada a la creación de campañas creativas y eficientes.
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -269,4 +255,28 @@ export default function Home() {
       </section>
     </main>
   );
+}
+{
+  /* Pricing Section */
+}
+{
+  /* <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-cyan-900 mb-12">Pricing Plans</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {pricingPlans.map((plan, index) => (
+              <Card key={index} className="p-8 text-center hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
+                <p className="text-4xl font-bold text-cyan-600 mb-6">{plan.price}<span className="text-base font-normal text-gray-600">/month</span></p>
+                <ul className="space-y-3 mb-8">
+                  {plan.features.map((feature, i) => (
+                    <li key={i} className="text-gray-600">{feature}</li>
+                  ))}
+                </ul>
+                <Button className="w-full bg-cyan-600 hover:bg-cyan-700">Select Plan</Button>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section> */
 }
