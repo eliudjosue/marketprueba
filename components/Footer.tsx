@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import Logo from "./ui/Logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -58,7 +59,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Rocket className="h-6 w-6 text-primary" />
+              {/* <Rocket className="h-6 w-6 text-primary" /> */}
+              <Logo/>
               <span className="font-bold text-xl">MacawMinds</span>
             </Link>
             <p className="text-muted-foreground">

@@ -204,7 +204,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
-                  src="ruta-a-la-foto-del-primer-community-manager.jpg"
+                  src="/maru.png"
                   alt="Community Manager 1"
                   className="w-full h-full object-cover"
                 />
