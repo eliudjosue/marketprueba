@@ -141,7 +141,7 @@ export default function Home() {
           </div>
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="/piclumen-1732654684385.png"
+              src="/piclumen-1732654684385.webp"
               alt="Team working"
               className="w-full h-full object-cover"
             />
@@ -188,7 +188,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
-                  src="eli.jpeg"
+                  src="eli.webp"
                   alt="Desarrollador de software"
                   className="w-full h-full object-cover"
                 />
@@ -204,7 +204,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
-                  src="/maru.png"
+                  src="/maru.webp"
                   alt="Community Manager 1"
                   className="w-full h-full object-cover"
                 />
@@ -220,7 +220,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
-                  src="gaby.jpeg"
+                  src="gaby.webp"
                   alt="Community Manager 2"
                   className="w-full h-full object-cover"
                 />
