@@ -116,8 +116,8 @@ export default function Footer() {
                 <Phone className="h-4 w-4" />
                 <span className="text-muted-foreground">+5491123878173</span>
               </li>
-              {/* <div className="flex space-x-4">
-                <Link
+              <div className="flex space-x-4">
+                {/* <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
@@ -128,14 +128,14 @@ export default function Footer() {
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Twitter className="h-5 w-5" />
-                </Link>
+                </Link> */}
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/macawminds?igsh=YzljYTk1ODg3Zg==" target="_blank"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
                 </Link>
-              </div> */}
+              </div>
             </ul>
           </div>
 
