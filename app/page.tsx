@@ -59,21 +59,21 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-900 via-purple-800 to-purple-900">
+    <main className="min-h-screen bg-gradient-to-b from-cyan-900 via-cyan-800 to-cyan-900">
       {/* Hero Section */}
       <section id="inicio" className="relative pt-20 pb-32 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Impulsa tu negocio al siguiente nivel
           </h1>
-          <p className="text-xl text-purple-100 mb-8">
+          <p className="text-xl text-cyan-100 mb-8">
             Creamos sitios web diseñados para captar leads, optimizamos tu
             presencia en Google y ejecutamos campañas de Google Ads efectivas
             para generar más oportunidades de negocio.
           </p>
 
           <div className="flex gap-4 justify-center">
-            {/* <Button size="lg" className="bg-purple-500 hover:bg-purple-600">
+            {/* <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600">
               Get Started
             </Button> */}
             <Button
@@ -81,10 +81,10 @@ export default function Home() {
               variant="outline"
               className="text-white relative overflow-hidden group"
               onClick={() =>
-                window.open("https://wa.me/541122522838", "_blank")
+                window.open("https://wa.me/541123878173", "_blank")
               }
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
+              <span className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
               <span className="relative z-10 group-hover:scale-105 transition-transform">
                 Contáctanos
               </span>
@@ -94,9 +94,9 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 bg-purple-50">
+      <section id="services" className="py-20 px-4 bg-cyan-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
+          <h2 className="text-4xl font-bold text-center text-cyan-900 mb-12">
             Nuestros servicios
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -105,7 +105,7 @@ export default function Home() {
                 key={index}
                 className="p-6 text-center hover:shadow-lg transition-shadow"
               >
-                <div className="flex justify-center mb-4 text-purple-600">
+                <div className="flex justify-center mb-4 text-cyan-600">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -117,10 +117,10 @@ export default function Home() {
       </section>
 
       {/* How we do it */}
-      <section id="howwedoit" className="py-20 px-4 bg-purple-50">
+      <section id="howwedoit" className="py-20 px-4 bg-cyan-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-purple-900 mb-8">
+            <h2 className="text-4xl font-bold text-cyan-900 mb-8">
               Nuestro proceso es claro y transparente
             </h2>
             <div className="space-y-6">
@@ -131,7 +131,7 @@ export default function Home() {
                 "Transferencia de conocimientos: Te enseñamos a gestionar tus herramientas digitales para que tengas el control total.",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <div className="bg-purple-600 p-2 rounded-full text-white">
+                  <div className="bg-cyan-600 p-2 rounded-full text-white">
                     <RocketIcon className="h-5 w-5" />
                   </div>
                   <p className="text-lg text-gray-700">{benefit}</p>
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80"
+              src="/piclumen-1732654684385.png"
               alt="Team working"
               className="w-full h-full object-cover"
             />
@@ -152,18 +152,18 @@ export default function Home() {
       {/* Pricing Section */}
       {/* <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Pricing Plans</h2>
+          <h2 className="text-4xl font-bold text-center text-cyan-900 mb-12">Pricing Plans</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pricingPlans.map((plan, index) => (
               <Card key={index} className="p-8 text-center hover:shadow-xl transition-shadow">
                 <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
-                <p className="text-4xl font-bold text-purple-600 mb-6">{plan.price}<span className="text-base font-normal text-gray-600">/month</span></p>
+                <p className="text-4xl font-bold text-cyan-600 mb-6">{plan.price}<span className="text-base font-normal text-gray-600">/month</span></p>
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="text-gray-600">{feature}</li>
                   ))}
                 </ul>
-                <Button className="w-full bg-purple-600 hover:bg-purple-700">Select Plan</Button>
+                <Button className="w-full bg-cyan-600 hover:bg-cyan-700">Select Plan</Button>
               </Card>
             ))}
           </div>
@@ -171,11 +171,11 @@ export default function Home() {
       </section> */}
 
       {/* Quienes somos*/}
-      <section id="about" className="bg-purple-900 text-white py-12 px-4">
+      <section id="about" className="bg-cyan-900 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-6">Quiénes Somos</h3>
-            <p className="text-purple-200 max-w-2xl mx-auto">
+            <p className="text-cyan-200 max-w-2xl mx-auto">
               Somos un equipo apasionado conformado por un desarrollador de
               software y dos especialistas en digitales orientadas a la creación
               de estrategias de marketing innovadoras, eficientes y
@@ -186,15 +186,15 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {/* Primer miembro */}
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
+              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
-                  src="ruta-a-la-foto-del-desarrollador.jpg"
+                  src="eli.jpeg"
                   alt="Desarrollador de software"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h4 className="text-xl font-bold mt-4">Eliud Campos</h4>
-              <p className="text-purple-200 text-sm mt-2">
+              <p className="text-cyan-200 text-sm mt-2">
                 Desarrollador de software con experiencia en tecnologías
                 modernas. Crea soluciones innovadoras que transforman ideas en
                 código.
@@ -202,7 +202,7 @@ export default function Home() {
             </div>
             {/* Segundo miembro */}
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
+              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
                   src="ruta-a-la-foto-del-primer-community-manager.jpg"
                   alt="Community Manager 1"
@@ -210,25 +210,25 @@ export default function Home() {
                 />
               </div>
               <h4 className="text-xl font-bold mt-4">Maru Salazar</h4>
-              <p className="text-purple-200 text-sm mt-2">
+              <p className="text-cyan-200 text-sm mt-2">
                 Especialista Digital orientada a la creación de estrategias de
-                marketing personalizadas orientadas a potenciar marcas y atraer
-                clientes potenciales.
+                marketing personalizadas, potenciar marcas y atraer
+                potenciales clientes.
               </p>
             </div>
             {/* Tercer miembro */}
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-purple-800">
+              <div className="w-32 h-32 mx-auto overflow-hidden rounded-full bg-cyan-800">
                 <img
-                  src="ruta-a-la-foto-del-segundo-community-manager.jpg"
+                  src="gaby.jpeg"
                   alt="Community Manager 2"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h4 className="text-xl font-bold mt-4">Gaby García</h4>
-              <p className="text-purple-200 text-sm mt-2">
-                Especialista digital orientada a Paid media, especialista en
-                Google Ads. Orientada a la creación de campañas creativas y
+              <p className="text-cyan-200 text-sm mt-2">
+                Especialista digital orientada a Paid media y
+                Google Ads. Dedicada a la creación de campañas creativas y
                 eficientes.
               </p>
             </div>
@@ -237,17 +237,17 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="choice" className="py-20 px-4 bg-purple-50">
+      <section id="choice" className="py-20 px-4 bg-cyan-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80"
+              src="/wy-choice-us.webp"
               alt="Team working"
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h2 className="text-4xl font-bold text-purple-900 mb-8">
+            <h2 className="text-4xl font-bold text-cyan-900 mb-8">
               Por qué elegirnos?
             </h2>
             <div className="space-y-6">
@@ -257,7 +257,7 @@ export default function Home() {
                 "Adaptabilidad a cualquier presupuesto: Ofrecemos una variedad de paquetes y servicios para que puedas elegir la opción que mejor se ajuste a tus necesidades y presupuesto.",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <div className="bg-purple-600 p-2 rounded-full text-white">
+                  <div className="bg-cyan-600 p-2 rounded-full text-white">
                     <RocketIcon className="h-5 w-5" />
                   </div>
                   <p className="text-lg text-gray-700">{benefit}</p>

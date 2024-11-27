@@ -9,7 +9,7 @@ const BotLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
       {/* Botón de WhatsApp */}
       <a
-        href="https://wa.me/541122522838"
+        href="https://wa.me/541123878173"
         target="_blank"
         rel="noopener noreferrer"
         style={{

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Facebook,
   Instagram,
@@ -19,7 +19,9 @@ export default function Footer() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -60,7 +62,10 @@ export default function Footer() {
               <span className="font-bold text-xl">MacawMinds</span>
             </Link>
             <p className="text-muted-foreground">
-            Tu solución completa de marketing digital. Desde el análisis de tu negocio hasta la gestión de tus campañas publicitarias, te ofrecemos un servicio integral para optimizar tu presencia en línea y generar más leads.
+              Tu solución completa de marketing digital. Desde el análisis de tu
+              negocio hasta la gestión de tus campañas publicitarias, te
+              ofrecemos un servicio integral para optimizar tu presencia en
+              línea y generar más leads.
             </p>
           </div>
 
@@ -102,14 +107,14 @@ export default function Footer() {
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
                 <span className="text-muted-foreground">
-                  contact@digimarkpro.com
+                  macawmindsmarketing@gmail.com
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+5491123878173</span>
               </li>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 <Link
                   href="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -128,7 +133,7 @@ export default function Footer() {
                 >
                   <Instagram className="h-5 w-5" />
                 </Link>
-              </div>
+              </div> */}
             </ul>
           </div>
 
@@ -184,7 +189,7 @@ export default function Footer() {
                 type="submit"
                 className="text-white relative overflow-hidden group"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-400 transition-transform transform translate-x-full group-hover:translate-x-0"></span>
                 <span className="relative z-10 group-hover:scale-105 transition-transform">
                   Enviar
                 </span>

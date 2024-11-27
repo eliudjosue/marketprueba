@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "./ui/Logo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,8 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Rocket className="h-6 w-6 text-primary" />
+            {/* <Rocket className="h-6 w-6 text-primary" /> */}
+            <Logo />
             <span className="font-bold text-xl">MacawMinds</span>
           </Link>
 
